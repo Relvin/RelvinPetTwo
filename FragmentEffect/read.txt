@@ -1,0 +1,9 @@
+﻿一个简单的shader特效类，只是修改颜色，能够修改精灵，动画等的颜色。2.2.3版本的代码有一个小bug，特效矩阵相乘计算出来的颜色，透明通道显示不正常
+实现的特效有：
+ES_NONE               //没有特效
+ES_BLACK_AND_WHITE    //黑白化
+ES_OLD_PHOTOS         //老照片
+ES_INVERT             //反相
+ES_BURNS              //灼伤（偏红）
+ES_POISONING          //中毒（偏绿）
+ES_COLD               //寒冷（偏蓝）
