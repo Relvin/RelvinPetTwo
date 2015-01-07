@@ -1,0 +1,1 @@
+#define ANDROID_OPPO 1

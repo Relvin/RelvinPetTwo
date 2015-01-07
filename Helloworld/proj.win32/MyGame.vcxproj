@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..\Data;..\Network;..\Support;..\Classes\Scenes;..\..\..\..\share\Packet;..\..\..\..\share;..\..\..\..\share\stringReader</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\share\Packet\ClientPacketHandler.cpp" />
+    <ClCompile Include="..\..\..\..\share\stringReader\PropertyList.cpp" />
+    <ClCompile Include="..\..\..\..\share\stringReader\ResourceStringConverter.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ActivityScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\BackCtrl.cpp" />
+    <ClCompile Include="..\Classes\Scenes\BuildUpScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\BuyDataMgr.cpp" />
+    <ClCompile Include="..\Classes\Scenes\BuyMiddleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\BuyScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CaptureScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAccountBindingLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAccountBindingScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAccountLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbActiveStageLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbActivityLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbActivityNodeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbActivityTipLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAltSkillEffLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAnnounceLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaFightLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaIndexLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaIndexScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaMyInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaPetCtrl.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaReportLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaResultScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaResultWinLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAwardCenterLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbAwardCenterScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleAnimationLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleDead.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleDust.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleLeaderPlus.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleSkillBgLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBattleTeamShowLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin1Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin20Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin21Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin22Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin23Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin2Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBegin3Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBossWarningLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBoxRewardFrame.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbBuildUpLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureMasterLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeMapLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeOverRewardFrame.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeOverRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeRewardFrame.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChatFaceLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChatLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbChoosePetLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCoinCarRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCountryLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbCreateNameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDropBoxLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDropTipFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbDropTipLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemEnhanceLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemIcon.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemIconLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundFrame1Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundFrame2Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundInfoScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipEvolveLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipEvolveScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipInlayLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipInlayScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipIntegrationLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipNormalFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipStrengthenLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEquipStrengthenScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventFirstRechargeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventGrowPlanFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventGrowPlanLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventIconLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventMainLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventMainScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventMySteryShopFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventMySteryShopLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventRecoverEnergyLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventReward30Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventReward7Layer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEventRewardFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEvoInfoFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEvoInfoListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbEvolveLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbExchangeCodeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbExchangeCodeScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbExcPetFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFightFinishLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFightRewardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFightStart.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFightWaveLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFindFriendLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFingerDownLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFingerUpLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFriendLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFriendMailLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFriendNodeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbFuseListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaOpenEgg.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultChaojueXiyou.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultChaoXiyou.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultEgg.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultStar.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultXiyou.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGemListFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGmInsertLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGmItemLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGMLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbGmUserLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbHaloLightLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbHeaderBackLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbHeaderBackLayer2.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemIconLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemInfoButtonLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbItemListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbJumpTipLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLeaderSkillEffLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLeftArrow.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer2.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer3.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer4.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer5.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer6.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbLostLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMailDetailLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMailListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMailListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMainPetCardLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMainTeamLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbMainTopLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbManager.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbNewGachaLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbNoServiceLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPadLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBagLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBagSaleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleAltLoad.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleCtrl.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleHpBarLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleLoading.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleSkillBgLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetChooseInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetEnhanceLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetEquipIcon.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetEvolveSuccessLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetFuseLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetIcon.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetIconCtrl.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowBackLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowTitle.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetSkillLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPetTujianLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbPlistShowLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbRegistLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbRescueFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbRightArrow.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbRuneIconLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbServerListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbServerNode.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSettingsLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSettingsScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShareFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopGemListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopGemListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopItemFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopItemFrameScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopNormalListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopNormalListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopSelectNumLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShopSelectNumScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbShowGetLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSortLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSweepLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSysFriendFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemBootInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemBootLose.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemLayer2.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemNoticeFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbSystemNoticeLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTeamFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTeamLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTeamMemberLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTeamPositionLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTextLianXieLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerMainLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerMainScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRankFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRankListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRewardFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRewardListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbTujianShowLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbUnitMiddleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbUserInfoLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbUserLvUpLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbVipFrameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbVipListLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbVipListScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CcbWinLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CCExTransition.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CCShake.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ChatDataMgr.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ChatScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\CPetMgr.cpp" />
+    <ClCompile Include="..\Classes\Scenes\DropItemSprite.cpp" />
+    <ClCompile Include="..\Classes\Scenes\EffectLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\FightPetSprite.cpp" />
+    <ClCompile Include="..\Classes\Scenes\FlyTextLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\FriendMailScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\FriendScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\GachaDataMgr.cpp" />
+    <ClCompile Include="..\Classes\Scenes\GachaScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\game_config.cpp" />
+    <ClCompile Include="..\Classes\Scenes\GuideData.cpp" />
+    <ClCompile Include="..\Classes\Scenes\GuideLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\LoadingLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainBottomInnerLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainBottomLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainHeadLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainMiddleLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MainShowPet.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MapLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MapPointNode.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MapScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\MaskLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ParticleScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\PetBattleControlDelegate.cpp" />
+    <ClCompile Include="..\Classes\Scenes\PetLoadingLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ServerListCtrl.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ShowPetBattleWord.cpp" />
+    <ClCompile Include="..\Classes\Scenes\StageLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\StageNode.cpp" />
+    <ClCompile Include="..\Classes\Scenes\StageScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\StartGameLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\StartGameScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\TextCriticalLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\TextMissLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\TextSparkLayer.cpp" />
+    <ClCompile Include="..\Classes\Scenes\TextWinLayer.cpp" />
+    <ClCompile Include="..\Classes\SupportWin32.cpp" />
+    <ClCompile Include="..\Data\ArenaDataMgr.cpp" />
+    <ClCompile Include="..\Data\CFuseDadaMgr.cpp" />
+    <ClCompile Include="..\Data\ChallengeDataMgr.cpp" />
+    <ClCompile Include="..\Data\ConfigBase.cpp" />
+    <ClCompile Include="..\Data\ConfigData.cpp" />
+    <ClCompile Include="..\Data\ConfigGet.cpp" />
+    <ClCompile Include="..\Data\ConfigReader.cpp" />
+    <ClCompile Include="..\Data\ConfigUtil.cpp" />
+    <ClCompile Include="..\Data\CsvReader.cpp" />
+    <ClCompile Include="..\Data\Emblem.cpp" />
+    <ClCompile Include="..\Data\EmblemDataMgr.cpp" />
+    <ClCompile Include="..\Data\Equip.cpp" />
+    <ClCompile Include="..\Data\EquipDataMgr.cpp" />
+    <ClCompile Include="..\Data\EventDataMgr.cpp" />
+    <ClCompile Include="..\Data\FightAI.cpp" />
+    <ClCompile Include="..\Data\FightPet.cpp" />
+    <ClCompile Include="..\Data\FightTeam.cpp" />
+    <ClCompile Include="..\Data\FriendCtrl.cpp" />
+    <ClCompile Include="..\Data\GameStateManager.cpp" />
+    <ClCompile Include="..\Data\GlobalData.cpp" />
+    <ClCompile Include="..\Data\Item.cpp" />
+    <ClCompile Include="..\Data\ItemDataMgr.cpp" />
+    <ClCompile Include="..\Data\LoginSystem.cpp" />
+    <ClCompile Include="..\Data\MailDataMgr.cpp" />
+    <ClCompile Include="..\Data\md5.cpp" />
+    <ClCompile Include="..\Data\Notify.cpp" />
+    <ClCompile Include="..\Data\Observer.cpp" />
+    <ClCompile Include="..\Data\PacketDataMgr.cpp" />
+    <ClCompile Include="..\Data\Pet.cpp" />
+    <ClCompile Include="..\Data\PetBattleData.cpp" />
+    <ClCompile Include="..\Data\PetCtrl.cpp" />
+    <ClCompile Include="..\Data\Role.cpp" />
+    <ClCompile Include="..\Data\Rune.cpp" />
+    <ClCompile Include="..\Data\ShopDataMgr.cpp" />
+    <ClCompile Include="..\Data\Singleton.cpp" />
+    <ClCompile Include="..\Data\SystemNoticeDataMgr.cpp" />
+    <ClCompile Include="..\Data\TaskDataMgr.cpp" />
+    <ClCompile Include="..\Data\Team.cpp" />
+    <ClCompile Include="..\Data\TeamCtrl.cpp" />
+    <ClCompile Include="..\Data\TowerDataMgr.cpp" />
+    <ClCompile Include="..\Data\VersionCtrl.cpp" />
+    <ClCompile Include="..\Network\AnyType.cpp" />
+    <ClCompile Include="..\Network\Encode.cpp" />
+    <ClCompile Include="..\Network\GameSession.cpp" />
+    <ClCompile Include="..\Network\NetBase.cpp" />
+    <ClCompile Include="..\Network\NetClient.cpp" />
+    <ClCompile Include="..\Network\SocketBuffer.cpp" />
+    <ClCompile Include="..\Support\ArmatureManager.cpp" />
+    <ClCompile Include="..\Support\CCFlowFire.cpp" />
+    <ClCompile Include="..\Support\CCScrollButton.cpp" />
+    <ClCompile Include="..\Support\CCScrollViewWithBar.cpp" />
+    <ClCompile Include="..\Support\CCTextFieldAuto.cpp" />
+    <ClCompile Include="..\Support\CScrollMsg.cpp" />
+    <ClCompile Include="..\Support\d9_base64.cpp" />
+    <ClCompile Include="..\Support\FlccMovieAction.cpp" />
+    <ClCompile Include="..\Support\FlccMovieClip.cpp" />
+    <ClCompile Include="..\Support\FlccMovieFPSAction.cpp" />
+    <ClCompile Include="..\Support\FlccReader.cpp" />
+    <ClCompile Include="..\Support\HttpLog.cpp" />
+    <ClCompile Include="..\Support\Instruments.cpp" />
+    <ClCompile Include="..\Support\LRActionInterval.cpp" />
+    <ClCompile Include="..\Support\MusicCtrl.cpp" />
+    <ClCompile Include="..\Support\ReRichText.cpp" />
+    <ClCompile Include="..\Support\res_encryption.cpp" />
+    <ClCompile Include="..\Support\SequenceAction.cpp" />
+    <ClCompile Include="..\Support\SequencePet.cpp" />
+    <ClCompile Include="..\Support\Singleton.cpp" />
+    <ClCompile Include="..\Support\SpccMovieAction.cpp" />
+    <ClCompile Include="..\Support\SpccMovieClip.cpp" />
+    <ClCompile Include="..\Support\SpccMovieFPSAction.cpp" />
+    <ClCompile Include="..\Support\SpccReader.cpp" />
+    <ClCompile Include="..\Support\SystemMessage.cpp" />
+    <ClCompile Include="..\Support\SystemMessageProtocol.cpp" />
+    <ClCompile Include="..\Support\UISupport.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\share\Defines.h" />
+    <ClInclude Include="..\..\..\..\share\EnumDefines.h" />
+    <ClInclude Include="..\..\..\..\share\Packet\ClientPacketHandler.h" />
+    <ClInclude Include="..\..\..\..\share\Packet\CmdDefine.h" />
+    <ClInclude Include="..\..\..\..\share\Packet\ErrorMsg.h" />
+    <ClInclude Include="..\..\..\..\share\stringReader\PropertyList.h" />
+    <ClInclude Include="..\..\..\..\share\stringReader\ResourceStringConverter.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Scenes\ActivityScene.h" />
+    <ClInclude Include="..\Classes\Scenes\BackCtrl.h" />
+    <ClInclude Include="..\Classes\Scenes\BuildUpScene.h" />
+    <ClInclude Include="..\Classes\Scenes\BuyDataMgr.h" />
+    <ClInclude Include="..\Classes\Scenes\BuyMiddleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\BuyScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CaptureScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAccountBindingLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAccountBindingScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAccountLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbActiveStageLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbActivityLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbActivityNodeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbActivityTipLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAltSkillEffLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAnnounceLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaFightLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaIndexLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaIndexScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaMyInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaPetCtrl.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaReportLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaResultScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaResultWinLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAwardCenterLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbAwardCenterScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleAnimationLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleDead.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleDust.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleLeaderPlus.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleSkillBgLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBattleTeamShowLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin1Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin20Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin21Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin22Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin23Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin2Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBegin3Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBossWarningLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBoxRewardFrame.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbBuildUpLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureMasterLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeMapLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeOverRewardFrame.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeOverRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeRewardFrame.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChatFaceLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChatLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbChoosePetLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCoinCarRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCountryLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbCreateNameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDropBoxLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDropTipFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbDropTipLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemEnhanceLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemIcon.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemIconLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundFrame1Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundFrame2Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundInfoScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipEvolveLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipEvolveScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipInlayLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipInlayScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipNormalFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipStrengthenLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEquipStrengthenScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventFirstRechargeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventGrowPlanFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventGrowPlanLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventIconLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventMainLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventMainScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventMySteryShopFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventMySteryShopLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventRecoverEnergyLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventReward30Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventReward7Layer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEventRewardFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEvoInfoFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEvoInfoListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbEvolveLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbExchangeCodeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbExchangeCodeScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbExcPetFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFightFinishLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFightRewardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFightStart.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFightWaveLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFindFriendLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFingerDownLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFingerUpLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFriendLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFriendMailLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFriendNodeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbFuseListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaOpenEgg.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultChaojueXiyou.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultChaoXiyou.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultEgg.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultStar.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultXiyou.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGemListFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGmInsertLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGmItemLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGMLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbGmUserLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbHaloLightLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbHeaderBackLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbHeaderBackLayer2.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemIconLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemInfoButtonLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbItemListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbJumpTipLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLeaderSkillEffLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLeftArrow.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer2.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer3.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer4.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer5.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer6.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbLostLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMailDetailLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMailListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMailListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMainPetCardLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMainTeamLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbMainTopLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbManager.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbNewGachaLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbNoServiceLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPadLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBagLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBagSaleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleAltLoad.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleCtrl.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleHpBarLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleLoading.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleSkillBgLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetChooseInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetEnhanceLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetEquipIcon.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetEvolveSuccessLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetFuseLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetIcon.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetIconCtrl.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowBackLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowTitle.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetSkillLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPetTujianLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbPlistShowLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbRegistLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbRescueFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbRightArrow.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbRuneIconLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbServerListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbServerNode.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSettingsLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSettingsScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShareFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopGemListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopGemListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopItemFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopItemFrameScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopNormalListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopNormalListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopSelectNumLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShopSelectNumScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbShowGetLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSortLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSweepLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSysFriendFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemBootInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemBootLose.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemLayer2.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemNoticeFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbSystemNoticeLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTeamFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTeamLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTeamMemberLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTeamPositionLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTextLianXieLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerMainLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerMainScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRankFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRankListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRewardFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRewardListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbTujianShowLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbUnitMiddleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbUserInfoLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbUserLvUpLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbVipFrameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbVipListLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbVipListScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CcbWinLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\CCExTransition.h" />
+    <ClInclude Include="..\Classes\Scenes\CCShake.h" />
+    <ClInclude Include="..\Classes\Scenes\ChatDataMgr.h" />
+    <ClInclude Include="..\Classes\Scenes\ChatScene.h" />
+    <ClInclude Include="..\Classes\Scenes\CPetMgr.h" />
+    <ClInclude Include="..\Classes\Scenes\DropItemSprite.h" />
+    <ClInclude Include="..\Classes\Scenes\EffectLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\FightPetSprite.h" />
+    <ClInclude Include="..\Classes\Scenes\FlyTextLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\FriendMailScene.h" />
+    <ClInclude Include="..\Classes\Scenes\FriendScene.h" />
+    <ClInclude Include="..\Classes\Scenes\GachaDataMgr.h" />
+    <ClInclude Include="..\Classes\Scenes\GachaScene.h" />
+    <ClInclude Include="..\Classes\Scenes\game_config.h" />
+    <ClInclude Include="..\Classes\Scenes\GuideData.h" />
+    <ClInclude Include="..\Classes\Scenes\GuideLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\LoadingLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainBottomInnerLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainBottomLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainHeadLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainMiddleLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MainScene.h" />
+    <ClInclude Include="..\Classes\Scenes\MainShowPet.h" />
+    <ClInclude Include="..\Classes\Scenes\MapLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\MapPointNode.h" />
+    <ClInclude Include="..\Classes\Scenes\MapScene.h" />
+    <ClInclude Include="..\Classes\Scenes\MaskLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\ParticleScene.h" />
+    <ClInclude Include="..\Classes\Scenes\PetBattleControlDelegate.h" />
+    <ClInclude Include="..\Classes\Scenes\PetLoadingLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\ServerListCtrl.h" />
+    <ClInclude Include="..\Classes\Scenes\ShowPetBattleWord.h" />
+    <ClInclude Include="..\Classes\Scenes\StageLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\StageNode.h" />
+    <ClInclude Include="..\Classes\Scenes\StageScene.h" />
+    <ClInclude Include="..\Classes\Scenes\StartGameLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\StartGameScene.h" />
+    <ClInclude Include="..\Classes\Scenes\TextCriticalLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\TextMissLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\TextSparkLayer.h" />
+    <ClInclude Include="..\Classes\Scenes\TextWinLayer.h" />
+    <ClInclude Include="..\Classes\Support.h" />
+    <ClInclude Include="..\Data\ArenaDataMgr.h" />
+    <ClInclude Include="..\Data\CFuseDadaMgr.h" />
+    <ClInclude Include="..\Data\ChallengeDataMgr.h" />
+    <ClInclude Include="..\Data\ConfigBase.h" />
+    <ClInclude Include="..\Data\ConfigData.h" />
+    <ClInclude Include="..\Data\ConfigEnum.h" />
+    <ClInclude Include="..\Data\ConfigGet.h" />
+    <ClInclude Include="..\Data\ConfigReader.h" />
+    <ClInclude Include="..\Data\ConfigUtil.h" />
+    <ClInclude Include="..\Data\CsvReader.h" />
+    <ClInclude Include="..\Data\DynamicStruct.h" />
+    <ClInclude Include="..\Data\Emblem.h" />
+    <ClInclude Include="..\Data\EmblemDataMgr.h" />
+    <ClInclude Include="..\Data\Equip.h" />
+    <ClInclude Include="..\Data\EquipDataMgr.h" />
+    <ClInclude Include="..\Data\EventDataMgr.h" />
+    <ClInclude Include="..\Data\FightAI.h" />
+    <ClInclude Include="..\Data\FightPet.h" />
+    <ClInclude Include="..\Data\FightTeam.h" />
+    <ClInclude Include="..\Data\FriendCtrl.h" />
+    <ClInclude Include="..\Data\GameStateManager.h" />
+    <ClInclude Include="..\Data\GlobalData.h" />
+    <ClInclude Include="..\Data\Item.h" />
+    <ClInclude Include="..\Data\ItemDataMgr.h" />
+    <ClInclude Include="..\Data\LoginSystem.h" />
+    <ClInclude Include="..\Data\MailDataMgr.h" />
+    <ClInclude Include="..\Data\md5.h" />
+    <ClInclude Include="..\Data\Notify.h" />
+    <ClInclude Include="..\Data\Observer.h" />
+    <ClInclude Include="..\Data\PacketDataMgr.h" />
+    <ClInclude Include="..\Data\Pet.h" />
+    <ClInclude Include="..\Data\PetBattleData.h" />
+    <ClInclude Include="..\Data\PetCtrl.h" />
+    <ClInclude Include="..\Data\Role.h" />
+    <ClInclude Include="..\Data\Rune.h" />
+    <ClInclude Include="..\Data\ShopDataMgr.h" />
+    <ClInclude Include="..\Data\Singleton.h" />
+    <ClInclude Include="..\Data\SystemNoticeDataMgr.h" />
+    <ClInclude Include="..\Data\TaskDataMgr.h" />
+    <ClInclude Include="..\Data\Team.h" />
+    <ClInclude Include="..\Data\TeamCtrl.h" />
+    <ClInclude Include="..\Data\TowerDataMgr.h" />
+    <ClInclude Include="..\Data\Version.h" />
+    <ClInclude Include="..\Data\VersionCtrl.h" />
+    <ClInclude Include="..\Network\AnyType.h" />
+    <ClInclude Include="..\Network\ByteBuffer.h" />
+    <ClInclude Include="..\Network\Encode.h" />
+    <ClInclude Include="..\Network\GameSession.h" />
+    <ClInclude Include="..\Network\NetBase.h" />
+    <ClInclude Include="..\Network\NetClient.h" />
+    <ClInclude Include="..\Network\SocketBuffer.h" />
+    <ClInclude Include="..\Network\WorldPacket.h" />
+    <ClInclude Include="..\Support\ArmatureManager.h" />
+    <ClInclude Include="..\Support\CCFlowFire.h" />
+    <ClInclude Include="..\Support\CCScrollButton.h" />
+    <ClInclude Include="..\Support\CCScrollViewWithBar.h" />
+    <ClInclude Include="..\Support\CCTextFieldAuto.h" />
+    <ClInclude Include="..\Support\CScrollMsg.h" />
+    <ClInclude Include="..\Support\CScrollMsgDelegate.h" />
+    <ClInclude Include="..\Support\d9_base64.h" />
+    <ClInclude Include="..\Support\deelx.h" />
+    <ClInclude Include="..\Support\DynamicStruct.h" />
+    <ClInclude Include="..\Support\FlccData.h" />
+    <ClInclude Include="..\Support\FlccMovieAction.h" />
+    <ClInclude Include="..\Support\FlccMovieClip.h" />
+    <ClInclude Include="..\Support\FlccMovieFPSAction.h" />
+    <ClInclude Include="..\Support\FlccReader.h" />
+    <ClInclude Include="..\Support\HttpLog.h" />
+    <ClInclude Include="..\Support\Instruments.h" />
+    <ClInclude Include="..\Support\KeyboardDelegate.h" />
+    <ClInclude Include="..\Support\Log.h" />
+    <ClInclude Include="..\Support\LRActionInterval.h" />
+    <ClInclude Include="..\Support\MusicCtrl.h" />
+    <ClInclude Include="..\Support\PadDefine.h" />
+    <ClInclude Include="..\Support\ReRichText.h" />
+    <ClInclude Include="..\Support\ResourceDefine.h" />
+    <ClInclude Include="..\Support\ResourceMusic.h" />
+    <ClInclude Include="..\Support\ResourcePic.h" />
+    <ClInclude Include="..\Support\ResourceStringClient.h" />
+    <ClInclude Include="..\Support\res_encryption.h" />
+    <ClInclude Include="..\Support\SequenceAction.h" />
+    <ClInclude Include="..\Support\SequencePet.h" />
+    <ClInclude Include="..\Support\Singleton.h" />
+    <ClInclude Include="..\Support\SpccData.h" />
+    <ClInclude Include="..\Support\SpccMovieAction.h" />
+    <ClInclude Include="..\Support\SpccMovieClip.h" />
+    <ClInclude Include="..\Support\SpccMovieFPSAction.h" />
+    <ClInclude Include="..\Support\SpccReader.h" />
+    <ClInclude Include="..\Support\SystemMessage.h" />
+    <ClInclude Include="..\Support\SystemMessageProtocol.h" />
+    <ClInclude Include="..\Support\UIMacro.h" />
+    <ClInclude Include="..\Support\UISupport.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\Box2D\proj.win32\Box2D.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

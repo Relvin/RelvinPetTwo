@@ -1,0 +1,3 @@
+#define ANDROID_CT 1
+
+#undef ENABLE_SOCIAL_SHARE

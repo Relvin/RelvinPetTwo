@@ -1,0 +1,3 @@
+#define ANDROID_DENA 1
+
+#undef ENABLE_SOCIAL_SHARE

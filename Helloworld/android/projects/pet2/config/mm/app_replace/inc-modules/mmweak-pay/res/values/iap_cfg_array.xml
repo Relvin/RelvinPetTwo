@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MM hero iap config . -->
+    
+    <integer-array name="iap_prices">
+        <item>1</item>
+        <item>6</item>
+        <item>20</item>
+    </integer-array>
+    
+    <string-array name="iap_codes">
+        <item >30000825017904</item>
+        <item >30000825017905</item>
+        <item >30000825017906</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- YD hero iap config . -->
+ 
+    <integer-array name="iap_prices">
+        <item>1</item>
+        <item>6</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>2000</item>
+        <item>30</item>
+        <item>120</item>
+    </integer-array>
+    
+    <string-array name="iap_codes">
+        <item >450</item>
+        <item >451</item>
+        <item >452</item>
+        <item >453</item>
+        <item >454</item>
+        <item >455</item>
+        <item >456</item>
+        <item >457</item>
+        <item >698</item>
+        <item >699</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1 @@
+#define ANDROID_CHBA 1

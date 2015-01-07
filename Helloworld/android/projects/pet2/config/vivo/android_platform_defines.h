@@ -1,0 +1,3 @@
+#define ANDROID_VIVO 1
+
+#undef ENABLE_SOCIAL_SHARE

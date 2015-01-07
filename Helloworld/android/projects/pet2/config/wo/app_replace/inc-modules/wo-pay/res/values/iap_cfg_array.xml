@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- wo pay files. -->
+    
+    <integer-array name="iap_prices">
+        <item>1</item>
+        <item>6</item>
+        <item>20</item>
+    </integer-array>
+    
+    <string-array name="iap_codes">
+        <item >140514034955</item>
+        <item >140514034956</item>
+    </string-array>
+    
+    <!--
+	三方支付代码
+	"901610856020140514183935468000001",
+	"901610856020140514183935468000002",
+    -->
+    
+</resources>

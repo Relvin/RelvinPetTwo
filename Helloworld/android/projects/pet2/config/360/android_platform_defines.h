@@ -1,0 +1,1 @@
+#define ANDROID_360 1

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>pic_login_bgnew.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{452,650}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{452,650}}</string>
+                <key>sourceSize</key>
+                <string>{452,650}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>scene_bg_loginnew.pvr.ccz</string>
+            <key>size</key>
+            <string>{456,654}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:bd03aa04b175d769e7ce815e0b05d3ca$</string>
+            <key>textureFileName</key>
+            <string>scene_bg_loginnew.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

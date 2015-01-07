@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>pic_op_bg_3a.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{360,568}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{360,568}}</string>
+                <key>sourceSize</key>
+                <string>{360,568}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>pic_op_bg_3a.pvr.ccz</string>
+            <key>size</key>
+            <string>{512,1024}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:349290216f30b8b67ce7d5065f7fcade$</string>
+            <key>textureFileName</key>
+            <string>pic_op_bg_3a.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

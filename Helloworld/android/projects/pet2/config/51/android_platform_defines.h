@@ -1,0 +1,1 @@
+#define ANDROID_51 1  // to report: exit app, login, create role

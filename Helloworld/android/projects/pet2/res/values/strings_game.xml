@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit_app_msg">确定退出游戏吗?</string>
+    <string name="exit_app_yes">退出</string>
+    <string name="exit_app_no">取消</string>
+</resources>

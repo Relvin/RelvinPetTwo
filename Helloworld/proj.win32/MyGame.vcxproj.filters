@@ -1,0 +1,2271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scenes">
+      <UniqueIdentifier>{fcf9fe8a-d1ef-44a5-8b25-8e1b5dd4213a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Support">
+      <UniqueIdentifier>{8c38527c-9463-4c4f-af46-4ba397fce5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Data">
+      <UniqueIdentifier>{d8445af3-0c57-4503-9f7f-3dbcb027eb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network">
+      <UniqueIdentifier>{6e11eaf9-ed15-4942-89d1-07c67d0c9076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Share">
+      <UniqueIdentifier>{294ea60b-1387-4d3d-a494-121bf21c9ab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\CCFlowFire.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\CCScrollButton.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\CCScrollViewWithBar.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\CCTextFieldAuto.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\CScrollMsg.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\d9_base64.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\FlccMovieAction.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\FlccMovieClip.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\FlccMovieFPSAction.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\FlccReader.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\Instruments.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\LRActionInterval.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\MusicCtrl.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\ReRichText.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\res_encryption.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SequenceAction.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SequencePet.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\Singleton.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SpccMovieAction.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SpccMovieClip.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SpccMovieFPSAction.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SpccReader.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SystemMessage.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\SystemMessageProtocol.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\UISupport.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ArenaDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\CFuseDadaMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ConfigBase.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ConfigGet.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ConfigReader.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ConfigUtil.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\CsvReader.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Emblem.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\EmblemDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Equip.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\EquipDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\EventDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\FightAI.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\FightPet.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\FightTeam.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\FriendCtrl.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\GameStateManager.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Item.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ItemDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\LoginSystem.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\MailDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\md5.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Observer.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Pet.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\PetBattleData.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\PetCtrl.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Role.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Rune.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ShopDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Singleton.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\TaskDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Team.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\TeamCtrl.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\TowerDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\VersionCtrl.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\AnyType.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\Encode.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\GameSession.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\NetBase.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\NetClient.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Network\SocketBuffer.cpp">
+      <Filter>Classes\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share\Packet\ClientPacketHandler.cpp">
+      <Filter>Classes\Share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share\stringReader\PropertyList.cpp">
+      <Filter>Classes\Share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share\stringReader\ResourceStringConverter.cpp">
+      <Filter>Classes\Share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ChallengeDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\Notify.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\PacketDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\SystemNoticeDataMgr.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\ArmatureManager.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Support\HttpLog.cpp">
+      <Filter>Classes\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SupportWin32.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ActivityScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BackCtrl.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BuildUpScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BuyDataMgr.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BuyMiddleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BuyScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CaptureScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAccountBindingLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAccountBindingScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAccountLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAchieveRewardScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbActiveStageLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbActivityLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbActivityNodeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbActivityTipLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAltSkillEffLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAnnounceLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaBattleScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaFightLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaIndexLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaIndexScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaMyInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaPetCtrl.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankRewardScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRankScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaReportLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaResultScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaResultWinLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbArenaShopScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAwardCenterLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbAwardCenterScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleAnimationLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleDead.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleDust.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleLeaderPlus.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleSkillBgLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBattleTeamShowLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin1Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin2Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin3Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin20Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin21Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin22Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBegin23Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBossWarningLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBoxRewardFrame.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbBuildUpLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCaptureMasterLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeMapLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeOverRewardFrame.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeOverRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChallengeRewardFrame.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChatFaceLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChatLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbChoosePetLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCoinCarRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCountryLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbCreateNameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDailyQuestRewardScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDropBoxLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDropTipFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbDropTipLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemEnhanceLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemIcon.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemIconLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEmblemListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundFrame1Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundFrame2Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundInfoScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipCompoundListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipEvolveLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipEvolveScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipInlayLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipInlayScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipNormalFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipStrengthenLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipStrengthenScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventFirstRechargeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventGrowPlanFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventGrowPlanLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventIconLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventMainLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventMainScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventMySteryShopFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventMySteryShopLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventRecoverEnergyLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventReward7Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventReward30Layer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEventRewardFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEvoInfoFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEvoInfoListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEvolveLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbExchangeCodeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbExchangeCodeScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbExcPetFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFightFinishLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFightRewardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFightStart.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFightWaveLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFindFriendLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFingerDownLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFingerUpLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFriendLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFriendMailLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFriendNodeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbFuseListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultChaojueXiyou.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultChaoXiyou.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultEgg.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultStar.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaResultXiyou.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGemListFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGmInsertLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGmItemLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGMLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGmUserLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbHaloLightLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbHeaderBackLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbHeaderBackLayer2.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbInviteFriendScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemIconLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemInfoButtonLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbItemListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbJumpTipLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLeaderSkillEffLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLeftArrow.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer2.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer3.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer4.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer5.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLianXieBgLayer6.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbLostLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMailDetailLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMailListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMailListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMainPetCardLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMainTeamLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbMainTopLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbManager.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbNewGachaLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbNoServiceLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPadLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBagLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBagSaleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleAltLoad.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleCtrl.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleHpBarLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleLoading.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetBattleSkillBgLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetChooseInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetEnhanceLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetEquipIcon.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetEvolveSuccessLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetFuseLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetIcon.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetIconCtrl.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowBackLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetShowTitle.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetSkillLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPetTujianLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbPlistShowLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbRegistLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbRescueFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbRightArrow.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbRuneIconLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbServerListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbServerNode.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSettingsLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSettingsScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShareFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopGemListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopGemListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopItemFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopItemFrameScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopNormalListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopNormalListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopSelectNumLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShopSelectNumScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbShowGetLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSortLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSweepLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSysFriendFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemBootInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemBootLose.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemLayer2.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemNoticeFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbSystemNoticeLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTeamFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTeamLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTeamMemberLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTeamPositionLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTextLianXieLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerMainLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerMainScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRankFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRankListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRewardFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTowerRewardListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbTujianShowLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbUnitMiddleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbUserInfoLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbUserLvUpLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbVipFrameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbVipListLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbVipListScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbWinLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CCExTransition.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CCShake.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ChatDataMgr.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ChatScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CPetMgr.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\DropItemSprite.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\EffectLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\FightPetSprite.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\FlyTextLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\FriendMailScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\FriendScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\GachaDataMgr.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\GachaScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\game_config.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\GuideData.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\GuideLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\LoadingLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainBottomInnerLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainBottomLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainHeadLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainMiddleLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MainShowPet.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MapLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MapPointNode.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MapScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\MaskLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ParticleScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\PetBattleControlDelegate.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\PetLoadingLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ServerListCtrl.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ShowPetBattleWord.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StageLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StageNode.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StageScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StartGameLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StartGameScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\TextCriticalLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\TextMissLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\TextSparkLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\TextWinLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\ConfigData.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Data\GlobalData.cpp">
+      <Filter>Classes\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbEquipIntegrationLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\CcbGachaOpenEgg.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Support.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CCFlowFire.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CCScrollButton.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CCScrollViewWithBar.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CCTextFieldAuto.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CScrollMsg.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\CScrollMsgDelegate.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\d9_base64.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\deelx.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\DynamicStruct.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\FlccData.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\FlccMovieAction.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\FlccMovieClip.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\FlccMovieFPSAction.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\FlccReader.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\Instruments.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\KeyboardDelegate.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\Log.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\LRActionInterval.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\MusicCtrl.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ReRichText.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\res_encryption.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ResourceDefine.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ResourcePic.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ResourceStringClient.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SequenceAction.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SequencePet.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\Singleton.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SpccData.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SpccMovieAction.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SpccMovieClip.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SpccMovieFPSAction.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SpccReader.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SystemMessage.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\SystemMessageProtocol.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\UIMacro.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\UISupport.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ArenaDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\CFuseDadaMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigBase.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigEnum.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigGet.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigReader.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigUtil.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\CsvReader.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\DynamicStruct.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Emblem.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\EmblemDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Equip.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\EquipDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\EventDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\FightAI.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\FightPet.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\FightTeam.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\FriendCtrl.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\GameStateManager.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Item.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ItemDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\LoginSystem.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\MailDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\md5.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Observer.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Pet.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\PetBattleData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\PetCtrl.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Role.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Rune.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ShopDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Singleton.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\TaskDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Team.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\TeamCtrl.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\TowerDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Version.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\VersionCtrl.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\AnyType.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\ByteBuffer.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\Encode.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\GameSession.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\NetBase.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\NetClient.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\SocketBuffer.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Network\WorldPacket.h">
+      <Filter>Classes\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\Packet\ClientPacketHandler.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\Packet\CmdDefine.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\Packet\ErrorMsg.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\Defines.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\EnumDefines.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\stringReader\PropertyList.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share\stringReader\ResourceStringConverter.h">
+      <Filter>Classes\Share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ChallengeDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\Notify.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\PacketDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\SystemNoticeDataMgr.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ArmatureManager.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\HttpLog.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\PadDefine.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Support\ResourceMusic.h">
+      <Filter>Classes\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ActivityScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BackCtrl.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BuildUpScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BuyDataMgr.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BuyMiddleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BuyScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CaptureScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAccountBindingLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAccountBindingScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAccountLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAchieveRewardScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbActiveStageLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbActivityLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbActivityNodeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbActivityTipLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAltSkillEffLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAnnounceLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaBattleScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaFightLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaIndexLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaIndexScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaMyInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaPetCtrl.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankRewardScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRankScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaReportLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaResultScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaResultWinLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbArenaShopScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAwardCenterLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbAwardCenterScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleAnimationLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleDead.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleDust.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleLeaderPlus.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleSkillBgLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBattleTeamShowLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin1Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin2Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin3Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin20Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin21Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin22Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBegin23Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBossWarningLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBoxRewardFrame.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbBuildUpLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCaptureMasterLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeMapLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeOverRewardFrame.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeOverRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChallengeRewardFrame.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChatFaceLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChatLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbChoosePetLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCoinCarRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCountryLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbCreateNameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDailyQuestRewardScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDropBoxLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDropTipFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbDropTipLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemEnhanceLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemIcon.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemIconLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEmblemListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundFrame1Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundFrame2Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundInfoScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipCompoundListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipEvolveLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipEvolveScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipInlayLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipInlayScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipNormalFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipStrengthenLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEquipStrengthenScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventFirstRechargeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventGrowPlanFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventGrowPlanLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventIconLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventMainLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventMainScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventMySteryShopFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventMySteryShopLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventRecoverEnergyLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventReward7Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventReward30Layer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEventRewardFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEvoInfoFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEvoInfoListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbEvolveLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbExchangeCodeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbExchangeCodeScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbExcPetFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFightFinishLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFightRewardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFightStart.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFightWaveLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFindFriendLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFingerDownLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFingerUpLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFriendLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFriendMailLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFriendNodeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbFuseListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultChaojueXiyou.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultChaoXiyou.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultEgg.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultStar.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaResultXiyou.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGemListFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGmInsertLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGmItemLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGMLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGmUserLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbHaloLightLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbHeaderBackLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbHeaderBackLayer2.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbInviteFriendScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemIconLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemInfoButtonLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbItemListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbJumpTipLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLeaderSkillEffLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLeftArrow.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer2.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer3.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer4.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer5.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLianXieBgLayer6.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbLostLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMailDetailLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMailListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMailListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMainPetCardLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMainTeamLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbMainTopLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbManager.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbNewGachaLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbNoServiceLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPadLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBagLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBagSaleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleAltLoad.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleCtrl.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleHpBarLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleLoading.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetBattleSkillBgLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetChooseInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetEnhanceLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetEquipIcon.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetEvolveSuccessLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetFuseLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetIcon.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetIconCtrl.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowBackLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetShowTitle.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetSkillLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPetTujianLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbPlistShowLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbRegistLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbRescueFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbRightArrow.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbRuneIconLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbServerListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbServerNode.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSettingsLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSettingsScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShareFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopGemListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopGemListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopItemFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopItemFrameScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopNormalListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopNormalListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopSelectNumLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShopSelectNumScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbShowGetLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSortLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSweepLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSysFriendFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemBootInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemBootLose.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemLayer2.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemNoticeFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbSystemNoticeLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTeamFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTeamLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTeamMemberLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTeamPositionLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTextLianXieLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerMainLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerMainScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRankFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRankListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRewardFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTowerRewardListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbTujianShowLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbUnitMiddleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbUserInfoLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbUserLvUpLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbVipFrameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbVipListLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbVipListScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbWinLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CCExTransition.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CCShake.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ChatDataMgr.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ChatScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CPetMgr.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\DropItemSprite.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\EffectLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\FightPetSprite.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\FlyTextLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\FriendMailScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\FriendScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GachaDataMgr.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GachaScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\game_config.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GuideData.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GuideLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\LoadingLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainBottomInnerLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainBottomLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainHeadLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainMiddleLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainShowPet.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MapLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MapPointNode.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MapScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MaskLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ParticleScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\PetBattleControlDelegate.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\PetLoadingLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ServerListCtrl.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ShowPetBattleWord.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StageLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StageNode.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StageScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StartGameLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StartGameScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\TextCriticalLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\TextMissLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\TextSparkLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\TextWinLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\ConfigData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Data\GlobalData.h">
+      <Filter>Classes\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\CcbGachaOpenEgg.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

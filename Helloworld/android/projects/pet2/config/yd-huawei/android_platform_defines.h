@@ -1,0 +1,2 @@
+#define ANDROID_YD 1
+#define ANDROID_YD_HUAWEI 1
